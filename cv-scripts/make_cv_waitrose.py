@@ -83,8 +83,10 @@ def build(path):
         "customer-facing work and I take real pride in getting things right "
         "for customers. I love good food and would be proud to serve "
         "food lovers as a Supermarket Assistant, keeping the shop well stocked, "
-        "tidy and welcoming so every customer leaves happy. I am flexible and "
-        "happy to work across the week, including evenings and weekends.",
+        "tidy and welcoming so every customer leaves happy. I am available on "
+        "Friday, Saturday, Sunday, Monday and Tuesday, including mornings, "
+        "evenings and weekends. I am not available on Wednesday or Thursday "
+        "due to university classes.",
         summary_style))
 
     # Why I'm a great fit
@@ -101,8 +103,8 @@ def build(path):
         "stock replenishment.",
         "Genuine interest in food and drink, and keen to learn about products "
         "to help customers.",
-        "Flexible across seven days a week, including mornings, evenings and "
-        "weekends.",
+        "Flexible across my available days (Friday to Tuesday), including "
+        "mornings, evenings and weekends.",
     ]))
 
     # Experience
@@ -138,10 +140,6 @@ def build(path):
     e.append(hr())
     e.append(bullets([
         "MSc Artificial Intelligence - Brunel University London (ongoing).",
-        "BTech Computer Science and Engineering - JNTU Hyderabad, India "
-        "(First Class).",
-        "Secondary education (equivalent to UK GCSEs and A-Levels) - "
-        "Hyderabad, India.",
     ]))
 
     doc.build(e)
