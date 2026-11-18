@@ -2,7 +2,7 @@
 """Sara's Home Bargains part-time Sales Assistant CV.
 
 Follows the handover rules: Pythian only, no em-dashes, simple English,
-First Class kept on the BTech, availability Fri to Tue (not Wed/Thu).
+First Class removed per Sara, no weekdays in summary.
 """
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
@@ -72,13 +72,12 @@ def build(path):
 
     # Summary
     e.append(Paragraph(
-        "Friendly, reliable and hard working Brunel University London student "
-        "(MSc Artificial Intelligence) looking for a part-time Sales Assistant "
-        "role at Home Bargains. I enjoy helping customers, keeping a shop "
-        "tidy and well stocked, and working as part of a busy team. I am "
-        "available on Friday, Saturday, Sunday, Monday and Tuesday, including "
-        "mornings, evenings and weekends. I am not available on Wednesday or "
-        "Thursday due to university classes.",
+        "Friendly, upbeat and reliable Brunel University London student "
+        "(MSc Artificial Intelligence) with customer-facing experience in "
+        "busy, fast-paced settings. I enjoy helping customers, giving a warm "
+        "and friendly service, and keeping the store looking great. Positive, "
+        "quick to learn and always happy to help, I would love to join the "
+        "Home Bargains team as a Sales Assistant.",
         summary_style))
 
     # Why I'm a great fit
@@ -93,8 +92,7 @@ def build(path):
         "accurately.",
         "A strong team player who supports colleagues in a busy shop.",
         "Reliable, punctual and quick to learn new tasks and systems.",
-        "Flexible across my available days (Friday to Tuesday), including "
-        "mornings, evenings and weekends.",
+        "Flexible with shifts, including mornings, evenings and weekends.",
     ]))
 
     # Experience
@@ -102,7 +100,7 @@ def build(path):
     e.append(hr())
 
     e.append(Paragraph("PYTHIAN", company_style))
-    e.append(Paragraph("Analytics Consultant | May 2022 - August 2023",
+    e.append(Paragraph("Consultant | May 2022 - August 2023",
                        jobtitle_style))
     e.append(bullets([
         "Worked in a busy, fast-paced team and spoke with clients to "
@@ -130,8 +128,7 @@ def build(path):
     e.append(hr())
     e.append(bullets([
         "MSc Artificial Intelligence - Brunel University London (ongoing).",
-        "BTech Computer Science and Engineering - JNTU Hyderabad, India "
-        "(First Class).",
+        "BTech Computer Science and Engineering - JNTU Hyderabad, India.",
     ]))
 
     doc.build(e)
