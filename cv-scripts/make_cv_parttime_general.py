@@ -90,7 +90,7 @@ def build(path):
     e.append(hr())
 
     e.append(Paragraph("SALES ASSISTANT (PART-TIME)", company_style))
-    e.append(Paragraph("Zudio | Hyderabad, India | 2019 - 2023", jobtitle_style))
+    e.append(Paragraph("Zudio | Hyderabad, India | 2019 - 2022", jobtitle_style))
     e.append(bullets([
         "Welcomed customers, answered their questions and helped them find "
         "the right products and sizes.",
